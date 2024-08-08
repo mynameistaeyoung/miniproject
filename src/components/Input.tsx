@@ -10,16 +10,14 @@ type UserProps = {
 }
 function Input({ htmlFor, id, type, placeholder, children }: UserProps) {
   return (
-    <div>
-      <label htmlFor={htmlFor}>
-        {children}
-        <StInput
-          id={id}
-          type={type}
-          placeholder={placeholder}
-        />
-      </label>
-    </div>
+    <StInputContainer>
+      <label htmlFor={htmlFor}>{children}</label>
+      <StInput
+        id={id}
+        type={type}
+        placeholder={placeholder}
+      />
+    </StInputContainer>
   )
 }
 
@@ -33,6 +31,11 @@ const StInput = styled.input`
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
+`
+
+const StInputContainer = styled.div`
+  display:flex;
+  flex-direction:column;
 `
 
 export { StInput }
