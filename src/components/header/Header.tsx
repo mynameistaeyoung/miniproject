@@ -1,13 +1,18 @@
-import React from 'react'
 import styled from "styled-components";
 import Weather from '../header/Weather';
+import { StLink } from "../../pages/accountmanagement/StyledAccount";
 
 function Header() {
     return (
-        <StContainer>
-            <div>My Todo List</div>
-            <div><Weather/></div>
-        </StContainer>
+        <>
+            <StHeaderMsg>
+                <div>황태영 미니프로젝트</div><StLink to="/login">로그아웃</StLink>
+            </StHeaderMsg>
+            <StContainer>
+                <div>My Todo List</div>
+                <div><Weather /></div>
+            </StContainer>
+        </>
     )
 }
 
@@ -24,3 +29,8 @@ const StContainer = styled.div`
   padding: 0 20px;
   margin-bottom: 24px;
 `;
+
+const StHeaderMsg = styled.div`
+    display:flex;
+    justify-content:space-between
+`
