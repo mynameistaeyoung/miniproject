@@ -1,19 +1,18 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../pages/home/Home';
-import Login from '../pages/login/Login';
-import Register from '../pages/register/Register';
-import Pw from '../pages/password/Pw';
-
+import Login from '../pages/accountmanagement/login/Login';
+import Register from '../pages/accountmanagement/register/Register';
+import FindPassword from '../pages/accountmanagement/findpassword/FindPassword';
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={< Home />} />
+                < Route path="/" element={< Home />} />
                 < Route path="/login" element={< Login />} />
                 < Route path="/register" element={< Register />} />
-                < Route path="/findPassword" element={< Pw/>} />
+                < Route path="/findPassword" element={< FindPassword />} />
             </Routes>
         </BrowserRouter>
     );
