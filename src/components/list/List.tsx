@@ -2,14 +2,18 @@ import { ListContainer, ListWrapper } from "./StyledList"
 import Todo from "../todo/Todo"
 import { useTodoStore } from "../../zustand/bearsStore"
 
+
+
+
+
 function List() {
   const { todos, deleteTodo, editTodo } = useTodoStore(state => state)
 
-  const onDeleteTodoHandler = (todoId) => {
+  const onDeleteTodoHandler = (todoId:number) => {
     deleteTodo(todoId)
   }
 
-  const onEditTodoHandler = (todoId) => {
+  const onEditTodoHandler = (todoId:number) => {
     editTodo(todoId)
   }
   
