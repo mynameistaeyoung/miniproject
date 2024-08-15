@@ -1,7 +1,7 @@
 import React from 'react'
 import * as St from '../StyledAccount'
-import Input from '../../../components/input/Input'
-import Button from '../../../components/button/Button'
+import Input from '../../../components/authom/input/Input'
+import Button from '../../../components/authom/button/Button'
 import { useNavigate } from 'react-router-dom'
 import Layout from '../../../components/layout/Layout'
 
