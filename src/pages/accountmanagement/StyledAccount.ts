@@ -39,4 +39,4 @@ const StLink = styled(Link)`
   }
 `
 
-export { PageContainer, StContainer,  StLink,StFooterMsg,StHeaderMsg }
+export { PageContainer, StContainer,  StLink ,StFooterMsg,StHeaderMsg }
